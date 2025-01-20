@@ -4,6 +4,14 @@
         position: relative;
     }
 
+    .header {
+        padding: 20px
+    }
+
+    header .logo {
+        width: 110px
+    }
+
     header .desktop {
         display: none;
     }
@@ -16,6 +24,7 @@
         display: flex;
         justify-content: space-between;
         margin: 20px 0;
+        align-items: center;
     }
 
     .menu-button {

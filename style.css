@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    max-width: 1180px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -39,8 +39,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    max-width: 1180px;
+    padding: 20px 90px;
     margin: 0 auto;
 }
 
@@ -57,7 +56,7 @@ header {
 }
 
 header .logo {
-    width: 90px;
+    width: 150px;
     margin-right: 28px;
 }
 
@@ -951,7 +950,6 @@ nav ul li a:hover .fas.fa-chevron-down {
     display: flex;
     width: 100%;
     align-items: center;
-    max-width: 1180px;
 }
 
 .contact-content::before {
@@ -1038,7 +1036,7 @@ nav ul li a:hover .fas.fa-chevron-down {
     padding: 40px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     z-index: 1;
-    max-width: 500px;
+    max-width: 40%;
 }
 
 .contact-form h3 {
