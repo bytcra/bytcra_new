@@ -39,9 +39,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px;
     max-width: 1180px;
     margin: 0 auto;
+}
+
+.menu-button {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav .close-button {
+    display: none;
 }
 
 header .logo {
@@ -284,6 +296,7 @@ nav ul li a:hover .fas.fa-chevron-down {
     color: white;
     letter-spacing: 0.5px;
     line-height: 67.2px;
+    max-width: 400px;
 }
 
 .about-content {
@@ -749,6 +762,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 .latest-blog-section {
     padding: 120px 90px;
     background-color: #0B0D11;
+    background-color: #14151B;
     color: white;
 }
 
@@ -1086,19 +1100,8 @@ nav ul li a:hover .fas.fa-chevron-down {
     flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
-    .contact-wrapper {
-        flex-direction: column;
-    }
-
-    .contact-content h2 {
-        font-size: 42px;
-        line-height: 52px;
-    }
-}
-
 .footer-section {
-    background-color: #0B0D11;
+    background-color: #14151B;
     color: white;
     padding: 50px 90px 20px;
 }
@@ -1218,6 +1221,7 @@ nav ul li a:hover .fas.fa-chevron-down {
     font-size: 20px;
     transition: color 0.3s ease;
     width: 40px;
+    text-align: left;
 }
 
 .social-icons a:hover {

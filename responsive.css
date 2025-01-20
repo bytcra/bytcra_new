@@ -1,0 +1,328 @@
+@media (max-width: 1025px) {
+
+    header {
+        position: relative;
+    }
+
+    header .desktop {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .menu-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+
+    .menu-button {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        left: -320px;
+        height: 100%;
+        width: 320px;
+        background-color: #14151B;
+        color: white;
+        padding: 20px;
+        transition: transform 0.5s ease;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+        border: none;
+        border-radius: 0;
+        min-width: fit-content;
+    }
+
+    .mobile-nav.open {
+        transform: translateX(320px);
+    }
+
+    .mobile-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0 0;
+        flex-direction: column;
+    }
+
+    .mobile-nav ul li {
+        margin: 10px 0;
+    }
+
+    .mobile-nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .mobile-nav .close-button {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .contact-button {
+        display: none;
+    }
+
+    .banner {
+        height: 100vh;
+        padding: 40px 20px;
+        background-position: center;
+        background-size: cover;
+        gap: 20px;
+    }
+
+    .banner .tagline {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .banner h1 {
+        font-size: 65px;
+        line-height: 78px;
+        margin: 20px 0 0;
+        height: auto;
+    }
+
+    .banner p {
+        font-size: 18px;
+        line-height: 27px;
+        max-width: 90%;
+    }
+
+    .banner button {
+        margin-top: 20px;
+    }
+
+    .about-section,
+    .services-section,
+    .why-us-section,
+    .latest-blog-section,
+    .contact-section {
+        padding: 100px 20px
+    }
+
+    .footer-section {
+        padding: 20px;
+    }
+
+    .about-header h2 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .grid-item.large {
+        height: 420px;
+    }
+
+    .grid-item.small {
+        height: 327px;
+    }
+
+    .about-philosophy {
+        margin-top: 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-us-content {
+        flex-direction: column;
+    }
+
+    .why-us-text {
+        order: 2;
+        width: 100%;
+    }
+
+    .why-us-image {
+        min-width: 100%;
+        min-height: 600px;
+        order: 1;
+    }
+
+    .why-us-text h2 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .blog-header h2 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-description {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .banner p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .banner button {
+        font-size: 14px;
+        padding: 15px 35px;
+    }
+
+    .about-section,
+    .services-section,
+    .why-us-section,
+    .latest-blog-section,
+    .contact-section {
+        padding: 60px 20px
+    }
+
+    .footer-section {
+        padding: 20px;
+    }
+
+    .about-header,
+    .services-header {
+        margin-bottom: 30px;
+    }
+
+    .about-header h2,
+    .services-header h2,
+    .why-us-text h2,
+    .blog-header h2 {
+        max-width: 100%;
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-grid {
+        flex-direction: column;
+    }
+
+    .grid-item.large {
+        height: 250px;
+    }
+
+    .grid-item.small {
+        height: 250px;
+    }
+
+    .about-philosophy h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .about-philosophy p,
+    .why-us-item p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .why-us-content {
+        flex-direction: column;
+    }
+
+    .why-us-text {
+        order: 2;
+        width: 100%;
+    }
+
+    .why-us-image {
+        min-width: calc(100% - 40px);
+        min-height: 200px;
+        order: 1;
+        width: 100%;
+    }
+
+    .why-us-item h3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .blog-card {
+        height: 300px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .footer-column h4 {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 15px;
+    }
+
+    .footer-column ul li {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 15px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .contact-content {
+        display: none;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        padding: 16px;
+        border-radius: 10px;
+    }
+
+    .footer-links ul {
+        justify-content: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}

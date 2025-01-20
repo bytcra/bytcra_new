@@ -58,3 +58,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.getElementById("menuButton");
+    const closeButton = document.getElementById("closeButton");
+    const mobileNav = document.getElementById("mobileNav");
+
+    menuButton.addEventListener("click", () => {
+        mobileNav.classList.add("open");
+    });
+
+    closeButton.addEventListener("click", () => {
+        mobileNav.classList.remove("open");
+    });
+});
