@@ -131,7 +131,8 @@
     .services-section,
     .why-us-section,
     .latest-blog-section,
-    .contact-section {
+    .contact-section,
+    .portfolio-section {
         padding: 100px 20px
     }
 
@@ -179,7 +180,8 @@
         order: 1;
     }
 
-    .why-us-text h2 {
+    .why-us-text h2,
+    .portfolio-header h2 {
         font-size: 48px;
         line-height: 58px;
     }
@@ -195,6 +197,19 @@
 
     .footer-description {
         text-align: left;
+    }
+
+    .portfolio-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .all-projects-button {
+        margin-top: 20px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -218,7 +233,8 @@
     .services-section,
     .why-us-section,
     .latest-blog-section,
-    .contact-section {
+    .contact-section,
+    .portfolio-section {
         padding: 60px 20px
     }
 
@@ -333,5 +349,9 @@
         justify-content: flex-start;
         gap: 10px;
         flex-wrap: wrap;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
     }
 }
