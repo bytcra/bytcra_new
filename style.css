@@ -148,8 +148,8 @@ nav ul li a:hover .fas.fa-chevron-down {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
-    background: url('./images/banner.jpg') no-repeat top -70px center/cover;
+    height: calc(100vh - 98px);
+    background: url('./images/banner.jpg') no-repeat top -120px center/cover;
 }
 
 .banner .tagline,
