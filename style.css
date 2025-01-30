@@ -211,9 +211,13 @@ nav ul li a:hover .fas.fa-chevron-down {
     font-size: 80px;
     font-style: normal;
     font-weight: 700;
-    height: 192px;
+    /* height: 192px; */
     letter-spacing: 0.5px;
-    max-width: 50%;
+    max-width: 560px;
+}
+
+.banner .blue-text {
+    color: #66FCF1
 }
 
 .banner p {
