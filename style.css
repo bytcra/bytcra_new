@@ -1301,13 +1301,13 @@ nav ul li a:hover .fas.fa-chevron-down {
 }
 
 .portfolio-item {
-    /* background-color: #121212; */
+    background-color: #0B0C10;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #FFFFFF30;
-    /* padding: 20px; */
+    /* border: 1px solid #FFFFFF30; */
+    padding: 20px;
     /* box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, .7); */
 }
 
@@ -1346,7 +1346,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 /* Portfolio Info */
 .portfolio-info {
-    padding: 16px;
+    padding-top: 16px;
     background: transparent;
     color: white;
     display: flex;
