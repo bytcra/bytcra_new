@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll('.nav-link'); // Select all nav links
     const sections = document.querySelectorAll('section');  // Select all sections
+    const homeLink = document.querySelector('.nav-link[href="#home"]'); // Select Home link
+    const header = document.querySelector('header'); // Select header
 
     // Function to highlight active link while scrolling
     const highlightNavOnScroll = () => {
-        let currentSectionId = '';
+        let currentSectionId = 'home';
 
         // Loop through each section to find the current one
         sections.forEach(section => {
@@ -30,19 +32,42 @@ document.addEventListener("DOMContentLoaded", () => {
         link.addEventListener('click', e => {
             e.preventDefault();
             const targetId = link.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-
-            if (targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start',
+            if (targetId === "home") {
+                // Scroll to the very top including the header
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
                 });
+            } else {
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                    });
+                }
             }
         });
     });
+    homeLink.classList.add('active');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY === 0) {
+            navLinks.forEach(link => link.classList.remove('active'));
+            homeLink.classList.add('active');
+        }
+        highlightNavOnScroll();
+    });
+
+    // Ensure Home is active when touching the header
+    header.addEventListener('mouseover', () => {
+        if (window.scrollY === 0) {
+            navLinks.forEach(link => link.classList.remove('active'));
+            homeLink.classList.add('active');
+        }
+    });
 
     // Add scroll event listener to highlight nav
-    window.addEventListener('scroll', highlightNavOnScroll);
+    // window.addEventListener('scroll', highlightNavOnScroll);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
