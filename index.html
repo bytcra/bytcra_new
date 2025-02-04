@@ -153,7 +153,7 @@
         </div> -->
         <div class="service-card fade-in">
           <div class="icon">
-            <img src="./images/services/web-dev.png" />
+            <img src="./images/services/mobile.png" />
           </div>
           <div class="bottom">
             <h3 class="title">Mobile App Development</h3>
@@ -170,7 +170,7 @@
         </div>
         <div class="service-card fade-in">
           <div class="icon">
-            <img src="./images/services/web.png" />
+            <img src="./images/services/web-dev.png" />
           </div>
           <div class="bottom">
             <h3 class="title">Website Development</h3>
@@ -186,7 +186,7 @@
         </div>
         <div class="service-card fade-in">
           <div class="icon">
-            <img src="./images/services/mobile.png" />
+            <img src="./images/services/web.png" />
           </div>
           <div class="bottom">
             <h3 class="title">Web/App UI/UX Design </h3>
@@ -372,7 +372,7 @@
     </div>
   </section>
 
-  <section class="latest-blog-section" id="blog">
+  <!-- <section class="latest-blog-section" id="blog">
     <div class="container2">
       <div class="blog-header">
         <span class="fade-in">Our Blog</span>
@@ -402,7 +402,7 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- <section class="cta-section">
     <div class="cta-wrapper">
@@ -426,10 +426,10 @@
     <div class="contact-form fade-in">
       <h3>Let’s Create An Amazing Mobile App Together!</h3>
       <form onsubmit="sendEmail(event)">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <input type="text" name="phone" placeholder="Your Phone Number" required />
-        <textarea name="project" placeholder="Tell us about your Project" rows="4" required></textarea>
+        <input type="text" name="user_name" placeholder="Your Name" required />
+        <input type="email" name="user_email" placeholder="Your Email" required />
+        <input type="text" name="user_subject" placeholder="Subject" required />
+        <textarea name="message" placeholder="Tell us about your Project" rows="4" required></textarea>
         <button type="submit" class="contact-button">Submit</button>
       </form>
     </div>
@@ -527,13 +527,13 @@
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
     (function () {
-      emailjs.init("sVwHYUpWCZ5XScWyx");
+      emailjs.init("EZDOLKXrQMDUr-zaQ");
     })();
 
     function sendEmail(event) {
       event.preventDefault();
 
-      emailjs.sendForm("service_2tsde1c", "template_x599wyb", event.target)
+      emailjs.sendForm("service_yjbj0r8", "template_zg8vkf4", event.target)
         .then(() => alert("Email Sent Successfully!"))
         .catch(() => alert("Error Sending Email"));
     }
