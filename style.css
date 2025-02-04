@@ -372,7 +372,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 }
 
 .grid-item.large:nth-child(2) {
-    background-image: url('./images/vision.jpg');
+    background-image: url('./images/thanks_2.png');
     background-position: center center;
     background-size: cover;
 }
@@ -760,7 +760,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 .why-us-image {
     flex: 1;
     position: relative;
-    background-image: url('./images/thanks.jpg');
+    background-image: url('./images/thanks.png');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1387,7 +1387,7 @@ nav ul li a:hover .fas.fa-chevron-down {
     border: 1px solid #66FCF1;
     color: #66FCF1;
     padding: 6px 12px;
-    font-size: 10px;
+    font-size: 8px;
     text-transform: uppercase;
     border-radius: 50px;
 }
