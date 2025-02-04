@@ -554,16 +554,21 @@ nav ul li a:hover .fas.fa-chevron-down {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.service-card .icon svg {
+    color: #66FCF1;
+    /* Your desired color */
+}
+
 .service-card .icon::before {
-    font-family: 'Font Awesome 6 Free';
+    /* font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     display: inline-block;
     font-size: 48px;
-    content: attr(data-icon);
+    content: attr(data-icon); */
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.service-card:nth-child(1) .icon::before {
+/* .service-card:nth-child(1) .icon::before {
     content: "\f0a1";
 }
 
@@ -585,7 +590,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 .service-card:nth-child(6) .icon::before {
     content: "\f1e0";
-}
+} */
 
 .service-card:hover .icon::before {
     transform: translateY(-10px);
@@ -720,6 +725,10 @@ nav ul li a:hover .fas.fa-chevron-down {
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+.why-us-items img {
+    max-width: 50px;
 }
 
 .why-us-item {
