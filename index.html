@@ -425,7 +425,7 @@
     </div>
     <div class="contact-form fade-in">
       <h3>Let’s Create An Amazing Mobile App Together!</h3>
-      <form action="#" method="POST">
+      <form onsubmit="sendEmail(event)">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <input type="text" name="phone" placeholder="Your Phone Number" required />
@@ -524,7 +524,20 @@
   <script src="./js/scrollAnimation.js"></script>
   <script src="./js/stickyScroll.js"></script>
   <script src="./js/contentLoadAnimation.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("sVwHYUpWCZ5XScWyx");
+    })();
 
+    function sendEmail(event) {
+      event.preventDefault();
+
+      emailjs.sendForm("service_2tsde1c", "template_x599wyb", event.target)
+        .then(() => alert("Email Sent Successfully!"))
+        .catch(() => alert("Error Sending Email"));
+    }
+  </script>
 </body>
 
 </html>

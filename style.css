@@ -1025,7 +1025,7 @@ nav ul li a:hover .fas.fa-chevron-down {
     font-weight: bold;
     position: relative;
     z-index: 2;
-    background: linear-gradient(90deg, #6b2cf5, #e62e90, #ff7f50);
+    background: linear-gradient(90deg, #2e4f4d, #000000, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1038,7 +1038,7 @@ nav ul li a:hover .fas.fa-chevron-down {
     width: 100%;
     height: 90%;
     z-index: 1;
-    background: linear-gradient(90deg, rgba(107, 44, 245, 0.6), rgba(230, 46, 144, 0.6), rgba(255, 127, 80, 0.6));
+    background: linear-gradient(90deg, rgb(102 252 241), rgb(82 241 230), rgb(116 255 250));
     filter: blur(30px);
     border-radius: 50px;
 }
