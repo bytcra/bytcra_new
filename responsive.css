@@ -121,7 +121,7 @@
     }
 
     .banner {
-        height: 100vh;
+        height: calc(100vh - 68px);
         padding: 40px 20px;
         background-position: center;
         background-size: cover;

@@ -72,9 +72,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const contactButton = document.getElementById("contactButton");
+    const contactButtonMobile = document.getElementById("contactButtoMobile");
 
     if (contactButton) {
         contactButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            document.querySelector("#contact").scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        });
+    }
+    if (contactButtonMobile) {
+        contactButtonMobile.addEventListener("click", (e) => {
             e.preventDefault();
             document.querySelector("#contact").scrollIntoView({
                 behavior: "smooth",
