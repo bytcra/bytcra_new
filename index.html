@@ -620,6 +620,41 @@
     "serviceType": "Web Development, Mobile App Development, UI/UX Design"
   }
 </script>
+
+  <script>
+    // Track clicks on the Contact Us button
+    document.getElementById("contactButton").addEventListener("click", function () {
+      gtag('event', 'contact_button_web_click', {
+        'event_category': 'Button Clicks',
+        'event_label': 'Contact Us Button Web'
+      });
+    });
+
+    document.getElementById("contactButtoMobile").addEventListener("click", function () {
+      gtag('event', 'contact_button_mobile_click', {
+        'event_category': 'Button Clicks',
+        'event_label': 'Contact Us Button Mobile'
+      });
+    });
+
+    // Track form submission
+    document.querySelector(".contact-form form").addEventListener("submit", function () {
+      gtag('event', 'form_submission', {
+        'event_category': 'Forms',
+        'event_label': 'Contact Form'
+      });
+    });
+
+    // Track scroll depth
+    window.addEventListener("scroll", function () {
+      let scrollDepth = Math.round(window.scrollY / document.body.scrollHeight * 100);
+      gtag('event', 'scroll', {
+        'event_category': 'User Engagement',
+        'event_label': 'Scroll Depth',
+        'value': scrollDepth
+      });
+    });
+  </script>
 </body>
 
 </html>
