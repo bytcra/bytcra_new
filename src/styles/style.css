@@ -154,7 +154,7 @@ nav ul li a:hover .fas.fa-chevron-down {
     align-items: center;
     text-align: center;
     height: calc(100vh - 98px);
-    background: url('./images/banner.jpg') no-repeat top -120px center/cover;
+    background: url('/images/banner.jpg') no-repeat top -120px center/cover;
 }
 
 .banner .tagline,
@@ -353,26 +353,26 @@ nav ul li a:hover .fas.fa-chevron-down {
 }
 
 .grid-item.large {
-    background-image: url('./images/mission.jpg');
+    background-image: url('/images/mission.jpg');
     background-position: center center;
     background-size: cover;
 }
 
 
 .grid-item.small {
-    background-image: url('./images/values.jpg');
+    background-image: url('/images/values.jpg');
     background-position: center center;
     background-size: cover;
 }
 
 .grid-item.small:nth-child(2) {
-    background-image: url('./images/equipment.jpg');
+    background-image: url('/images/equipment.jpg');
     background-position: center center;
     background-size: cover;
 }
 
 .grid-item.large:nth-child(2) {
-    background-image: url('./images/thanks_2.png');
+    background-image: url('/images/thanks_2.png');
     background-position: center center;
     background-size: cover;
 }
@@ -761,7 +761,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 .why-us-image {
     flex: 1;
     position: relative;
-    background-image: url('./images/thanks.png');
+    background-image: url('/images/thanks.png');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -883,7 +883,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 }
 
 .cta-wrapper {
-    background-image: url('./images/cta-background.jpg');
+    background-image: url('/images/cta-background.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -985,7 +985,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 .contact-content {
     flex: 1;
-    background-image: url('./images/cta-background.jpg');
+    background-image: url('/images/cta-background.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;

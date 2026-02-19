@@ -1,105 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+// Tell Astro to wrap this page with our BaseLayout template
+import BaseLayout from '../layouts/BaseLayout.astro';
 
-<head>
-  <!-- Required Meta Tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+// Import CSS — Astro will process and optimize these automatically
+import '../styles/style.css';
+import '../styles/responsive.css';
+---
 
-  <!-- Title -->
-  <meta property="og:title" content="Bytcra - Best Mobile App, Website & UI/UX Design Solutions">
-
-  <!-- Description -->
-  <meta property="og:description"
-    content="Bytcra IT Services provides expert web development, mobile app solutions, and UI/UX design to help businesses grow with cutting-edge digital technology.">
-
-  <!-- URL -->
-  <meta property="og:url" content="https://bytcra.com">
-
-  <!-- Type -->
-  <meta property="og:type" content="website">
-
-  <!-- Image (Make sure this image is hosted and publicly accessible) -->
-  <meta property="og:image" content="https://bytcra.com/images/meta-banner.png">
-  <meta property="og:image:alt" content="Bytcra IT Services - Digital Solutions">
-
-  <!-- Image Dimensions (Optional but recommended) -->
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-
-  <!-- Twitter Card Meta Tags (For Twitter/X) -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Bytcra - Best Mobile App, Website & UI/UX Design Solutions">
-  <meta name="twitter:description"
-    content="We offer cutting-edge mobile app development, website development, and UI/UX design services.">
-  <meta name="twitter:image" content="https://bytcra.com/images/meta-banner.png">
-  <meta name="twitter:image:alt" content="Bytcra IT Services - Digital Solutions">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://bytcra.com/sitemap.xml">
-  <meta name="robots" content="index, follow">
-
-
-  <!-- Title for the Website -->
-  <title>Bytcra - Best Mobile App, Website & UI/UX Design Solutions</title>
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKJBFPY8PQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-DKJBFPY8PQ');
-  </script>
-
-</head>
-
-<body>
-  <header>
-    <div class="header">
-      <img class="logo" src="images/logo.png" alt="Bytcra IT Services Logo" loading="lazy">
-      <button class="menu-button" id="menuButton"><i class="fas fa-bars"></i></button>
-      <nav class="desktop">
-        <ul>
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#why-us" class="nav-link">Why Us</a></li>
-          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-          <!-- <li><a href="#blog" class="nav-link">Blog</a></li> -->
-        </ul>
-      </nav>
-      <nav class="mobile-nav" id="mobileNav">
-        <div class="menu-wrapper">
-          <image class="logo" src="images/logo.png" alt="Bytcra logo"></image>
-          <button class="close-button" id="closeButton"><i class="fas fa-times"></i></button>
-        </div>
-        <ul>
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#why-us" class="nav-link">Why Us</a></li>
-          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-          <!-- <li><a href="#blog" class="nav-link">Blog</a></li> -->
-        </ul>
-        <button class="contact-button-mobile" id="contactButtoMobile">Contact Us</button>
-      </nav>
-      <button class="contact-button" id="contactButton">Contact Us</button>
-    </div>
-  </header>
+<BaseLayout title="Bytcra - Best Mobile App, Website & UI/UX Design Solutions">
 
   <section class="banner" id="home">
-    <!-- <div class="tagline">Best Digital Agency</div> -->
     <h1>We Craft Your <span class="blue-text">Digital Identity</span></h1>
     <p>Crafting high-quality, scalable digital solution. From sleek mobile apps to web platforms that turn startup ideas
       into reality with speed and cost-efficiency.</p>
-    <!-- <button>Make Inquiry</button> -->
   </section>
 
   <section class="about-section" id="about">
@@ -171,49 +84,16 @@
         <h2>Explore Our Best Services</h2>
       </div>
       <div class="services-grid">
-        <!-- <div class="service-card fade-in">
-          <div class="icon">
-            <img src="./images/services/web.png" />
-          </div>
-          <div class="bottom">
-            <h3 class="title">Web Design</h3>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor.</p>
-            <a href="#" class="view-details">View Details<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
         <div class="service-card fade-in">
           <div class="icon">
-            <img src="./images/services/mobile.png" />
-          </div>
-          <div class="bottom">
-            <h3 class="title">Branding Design</h3>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor.</p>
-            <a href="#" class="view-details">View Details<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="service-card fade-in">
-          <div class="icon">
-            <img src="./images/services/web-dev.png" />
-          </div>
-          <div class="bottom">
-            <h3 class="title">Web Development</h3>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor.</p>
-            <a href="#" class="view-details">View Details<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div> -->
-        <div class="service-card fade-in">
-          <div class="icon">
-            <img src="images/services/mobile.png" alt="Mobile App Development Service" loading="lazy">
+            <img src="/images/services/mobile.png" alt="Mobile App Development Service" loading="lazy">
           </div>
           <div class="bottom">
             <h3 class="title">Mobile App Development</h3>
             <p class="description">We craft high-performance, scalable mobile apps with intuitive UI/UX, seamless
               functionality, and robust architecture for iOS, Android, and cross-platform solutions. Our expertise spans
               custom app development, cloud integration, API connectivity, and secure, fast-loading applications
-              designed for smooth user experiences and long-term growth. Whether you’re a startup or an enterprise, we
+              designed for smooth user experiences and long-term growth. Whether you're a startup or an enterprise, we
               deliver user-centric, future-ready mobile solutions that drive engagement, retention, and business success
               in a competitive market.</p>
 
@@ -223,14 +103,14 @@
         </div>
         <div class="service-card fade-in">
           <div class="icon">
-            <img src="images/services/web-dev.png" alt="Web Development Services" loading="lazy">
+            <img src="/images/services/web-dev.png" alt="Web Development Services" loading="lazy">
           </div>
           <div class="bottom">
             <h3 class="title">Website Development</h3>
             <p class="description">We build fast, scalable, and visually engaging websites with intuitive UI/UX,
               seamless navigation, and robust functionality to enhance user experience and business growth. Our
               expertise includes custom web development, responsive design, eCommerce solutions, and enterprise-level
-              platforms, ensuring speed, security, and long-term scalability. Whether it’s a corporate website, web app,
+              platforms, ensuring speed, security, and long-term scalability. Whether it's a corporate website, web app,
               or online store, we craft future-ready digital solutions that drive engagement, conversions, and brand
               success in an ever-evolving digital landscape.</p>
             <a href="#" class="view-details">View Details<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
@@ -239,7 +119,7 @@
         </div>
         <div class="service-card fade-in">
           <div class="icon">
-            <img src="images/services/web.png" alt="UI/UX Design Service" loading="lazy">
+            <img src="/images/services/web.png" alt="UI/UX Design Service" loading="lazy">
           </div>
           <div class="bottom">
             <h3 class="title">UI/UX Design </h3>
@@ -265,7 +145,7 @@
           <h2 class="fade-in">Why Clients Choose Bytcra</h2>
           <div class="why-us-items">
             <div class="why-us-item fade-in">
-              <img src="./images/WhyUs/fast.png" alt="Fast Response - Quick IT Solutions by Bytcra" loading="lazy">
+              <img src="/images/WhyUs/fast.png" alt="Fast Response - Quick IT Solutions by Bytcra" loading="lazy">
               <div>
                 <h3>Fast Response</h3>
                 <p>We provide fast, high-quality digital solutions with expertise in web and mobile app development,
@@ -273,7 +153,7 @@
               </div>
             </div>
             <div class="why-us-item fade-in">
-              <img src="./images/WhyUs/world.png" alt="World-Class UI/UX Designers at Bytcra" loading="lazy">
+              <img src="/images/WhyUs/world.png" alt="World-Class UI/UX Designers at Bytcra" loading="lazy">
               <div>
                 <h3>World Class Designer</h3>
                 <p>We craft intuitive, user-friendly UI/UX that enhances engagement and maximizes conversions, ensuring
@@ -281,7 +161,7 @@
               </div>
             </div>
             <div class="why-us-item fade-in">
-              <img src="./images/WhyUs/quality.png" alt="Best Quality Digital Solutions - Bytcra IT Services"
+              <img src="/images/WhyUs/quality.png" alt="Best Quality Digital Solutions - Bytcra IT Services"
                 loading="lazy">
               <div>
                 <h3>Best Quality</h3>
@@ -302,12 +182,11 @@
       <span class="portfolio-tag fade-in">Portfolio</span>
       <div class="portfolio-header">
         <h2 class="fade-in">Discover Our <br> Best Work</h2>
-        <!-- <a href="#" class="all-projects-button fade-in">All Projects</a> -->
       </div>
       <div class="portfolio-grid">
         <div class="portfolio-item">
           <div class="portfolio-image fade-in">
-            <img src="images/portfolio/portfolio_birdie.png" alt="Birdie+ - Women's Safety App" loading="lazy">
+            <img src="/images/portfolio/portfolio_birdie.png" alt="Birdie+ - Women's Safety App" loading="lazy">
           </div>
           <div class="portfolio-info fade-in">
             <h3><span class="highlight">Birdie:</span> A safety app for women, offering quick support when feeling
@@ -321,7 +200,7 @@
         </div>
         <div class="portfolio-item">
           <div class="portfolio-image fade-in">
-            <img src="images/portfolio/portfolio_lumme.png" alt="Lumme - Gesture-Based Eating Tracker App"
+            <img src="/images/portfolio/portfolio_lumme.png" alt="Lumme - Gesture-Based Eating Tracker App"
               loading="lazy">
           </div>
           <div class="portfolio-info fade-in">
@@ -340,12 +219,12 @@
             high-performance development.
             From feature-rich apps to interactive websites, we craft engaging, future-ready digital experiences that
             drive growth and brand success.
-            Let’s bring your vision to life!
+            Let's bring your vision to life!
           </p>
         </div>
         <div class="portfolio-item">
           <div class="portfolio-image fade-in">
-            <img src="images/portfolio/portfolio_hitch_transpoter.png" alt="Hitch Transport - Earn While Traveling App"
+            <img src="/images/portfolio/portfolio_hitch_transpoter.png" alt="Hitch Transport - Earn While Traveling App"
               loading="lazy">
           </div>
           <div class="portfolio-info fade-in">
@@ -360,7 +239,7 @@
         </div>
         <div class="portfolio-item">
           <div class="portfolio-image fade-in">
-            <img src="images/portfolio/portfolio_shrewdd.png" alt="Shrewdd - B2B Marketing & Digital Campaigns"
+            <img src="/images/portfolio/portfolio_shrewdd.png" alt="Shrewdd - B2B Marketing & Digital Campaigns"
               loading="lazy">
           </div>
           <div class="portfolio-info fade-in">
@@ -376,7 +255,7 @@
         </div>
         <div class="portfolio-item">
           <div class="portfolio-image fade-in">
-            <img src="images/portfolio/portfolio_sfbeverages.png"
+            <img src="/images/portfolio/portfolio_sfbeverages.png"
               alt="San Francisco Beverages - Non-Alcoholic Beverage Supplier" loading="lazy">
           </div>
           <div class="portfolio-info fade-in">
@@ -393,13 +272,13 @@
         <div class="portfolio-item portfolio-text">
           <h3 class="fade-in">Transform Your Idea Into Reality</h3>
           <p class="fade-in">We design and develop custom web and mobile solutions with scalable architecture, intuitive
-            UI/UX, and high-performance functionality. Whether it’s a cutting-edge app or an interactive website, we
-            craft future-ready digital experiences that drive engagement, growth, and success. Let’s build something
+            UI/UX, and high-performance functionality. Whether it's a cutting-edge app or an interactive website, we
+            craft future-ready digital experiences that drive engagement, growth, and success. Let's build something
             amazing!</p>
         </div>
         <div class="portfolio-item">
           <div class="portfolio-image fade-in">
-            <img src="images/portfolio/portfolio_shore_bags.png" alt="ShoreBags - Sustainable Canvas Bag Brand"
+            <img src="/images/portfolio/portfolio_shore_bags.png" alt="ShoreBags - Sustainable Canvas Bag Brand"
               loading="lazy">
           </div>
           <div class="portfolio-info fade-in">
@@ -414,7 +293,7 @@
         </div>
         <div class="portfolio-item">
           <div class="portfolio-image fade-in">
-            <img src="images/portfolio/portfolio_ksm_toys.png" alt="KSM Toys - Top European Toy Brands Distributor"
+            <img src="/images/portfolio/portfolio_ksm_toys.png" alt="KSM Toys - Top European Toy Brands Distributor"
               loading="lazy">
           </div>
           <div class="portfolio-info fade-in">
@@ -432,54 +311,10 @@
     </div>
   </section>
 
-  <!-- <section class="latest-blog-section" id="blog">
-    <div class="container2">
-      <div class="blog-header">
-        <span class="fade-in">Our Blog</span>
-        <h2 class="fade-in">Read Our Latest Blog</h2>
-      </div>
-      <div class="blog-grid">
-        <a class="blog-card fade-in">
-          <img src="images/blog1.jpg" alt="VR sketching tool">
-          <div class="blog-content">
-            <h3>Could this VR sketching tool be coming of age for designers in the future?</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque...</p>
-          </div>
-        </a>
-        <a class="blog-card fade-in">
-          <img src="images/blog2.jpg" alt="Future Cities">
-          <div class="blog-content">
-            <h3>8 Cities That Show You What The Future Will Look Like (Innovative Ideas)</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque...</p>
-          </div>
-        </a>
-        <a class="blog-card fade-in fade-in">
-          <img src="images/blog3.jpg" alt="Gift Ideas">
-          <div class="blog-content">
-            <h3>15 Gift Ideas for Mom and Dad, Wherever They Are This Year</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque...</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- <section class="cta-section">
-    <div class="cta-wrapper">
-      <h2 class="fade-in">Let's Create Something Great Together</h2>
-      <p class="fade-in">
-        Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim
-        veniam quis nostrud exercitation.
-      </p>
-      <button class="cta-button fade-in">Make Inquiry</button>
-    </div>
-  </section> -->
-
   <section class="contact-section" id="contact">
     <div class="contact-wrapper ">
       <div class="contact-content">
-        <h4 class="fade-in">Let’s Change <br />The World With Your <br /> </h4>
+        <h4 class="fade-in">Let's Change <br />The World With Your <br /> </h4>
         <span class="highlight fade-in">App <div class="color-effect-text"><span class="diffColor">Idea!</span></span>
       </div>
     </div>
@@ -496,106 +331,9 @@
     </div>
   </section>
 
-  <footer class="footer-section">
-    <div class="container">
-      <div class="footer-content">
-        <!-- Logo and Description -->
-        <div class="footer-logo">
-          <img src="images/logo.png" alt="Bytcra Logo" loading="lazy">
-          <p>We craft your</p>
-          <p>digital identity.</p>
-        </div>
-        <!-- Contact Us -->
-        <div class="footer-column">
-          <h4>Contact Us</h4>
-          <ul>
-            <!-- Mail - clicking on will copy the email id on the system's clipboard-->
-            <li><a href="mailto:info@bytcra.com"><img src="./images/footer/email.png" alt="Email Icon"
-                  loading="lazy" />info@bytcra.com</a></li>
-            <!-- X -->
-            <li><a href="https://x.com/bytcra_"> <img src="./images/footer/x.png" alt="X (Twitter) Icon"
-                  loading="lazy" />
-                X (Twitter)
-              </a></li>
-            <!-- LinkedIn -->
-            <li><a href="https://www.linkedin.com/company/bytcra"> <img src="./images/footer/LinkedIn.png"
-                  alt="LinkedIn Icon" loading="lazy" />
-                LinkedIn</a>
-            </li>
-            <!-- Instagram -->
-            <li><a href="https://www.instagram.com/bytcra/"> <img src="./images/footer/Insta.png" alt="Instagram Icon"
-                  loading="lazy" />
-                Instagram</a></li>
-            <!-- Facebook -->
-            <li><a href="https://www.facebook.com/profile.php?id=61572965034975"> <img src="./images/footer/FB.png"
-                  alt="Facebook Icon" loading="lazy" />
-                Facebook</a></li>
-          </ul>
-        </div>
-        <!-- Our Services -->
-        <div class="footer-column">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#services">Mobile App Development</a></li>
-            <li><a href="#services">Website Development</a></li>
-            <li><a href="#services">UI/UX Design</a></li>
-          </ul>
-        </div>
-        <!-- Quick Links -->
-        <div class="footer-column">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#services">Services</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- Footer Bottom -->
-      <div class="footer-bottom">
-        <div class="footer-links">
-          <!-- <ul>
-            <li>
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#">Terms Of Use</a>
-            </li>
-            <li>
-              <a href="#">Copyright 2024 All rights reserved</a>
-            </li>
-          </ul> -->
-          <p class="footer-description">
-            Bytcra © 2025. all right reserved.
-          </p>
-        </div>
-
-        <!-- <div class="social-icons">
-          <a href="#" class="social-icon">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="#" class="social-icon">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="social-icon">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" class="social-icon">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </div> -->
-      </div>
-    </div>
-  </footer>
-
-  <!-- Import the external JavaScript -->
-  <script src="./js/nav.js"></script>
-  <script src="./js/scrollAnimation.js"></script>
-  <script src="./js/stickyScroll.js"></script>
-  <script src="./js/contentLoadAnimation.js"></script>
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
+  <!-- Page-specific scripts (only needed on the main site, not K95) -->
+  <script is:inline src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script is:inline>
     (function () {
       emailjs.init("EZDOLKXrQMDUr-zaQ");
     })();
@@ -611,39 +349,39 @@
         .catch(() => alert("Error Sending Email"));
     }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Bytcra IT Services",
-    "url": "https://bytcra.com",
-    "logo": "https://bytcra.com/images/logo.png",
-    "description": "Bytcra IT Services provides expert web development, mobile app solutions, and UI/UX design to help businesses succeed.",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "info@bytcra.com",
-      "contactType": "customer service"
-    }
-  }
-</script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Web Development, Mobile App & UI/UX Design",
-    "provider": {
+  <script is:inline type="application/ld+json">
+    {
+      "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Bytcra IT Services",
-      "url": "https://bytcra.com"
-    },
-    "description": "Best web development, mobile app solutions, and UI/UX design services to create high-performance digital products.",
-    "serviceType": "Web Development, Mobile App Development, UI/UX Design"
-  }
-</script>
+      "url": "https://bytcra.com",
+      "logo": "https://bytcra.com/images/logo.png",
+      "description": "Bytcra IT Services provides expert web development, mobile app solutions, and UI/UX design to help businesses succeed.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@bytcra.com",
+        "contactType": "customer service"
+      }
+    }
+  </script>
 
-  <script>
-    // Track clicks on the Contact Us button
+  <script is:inline type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Web Development, Mobile App & UI/UX Design",
+      "provider": {
+        "@type": "Organization",
+        "name": "Bytcra IT Services",
+        "url": "https://bytcra.com"
+      },
+      "description": "Best web development, mobile app solutions, and UI/UX design services to create high-performance digital products.",
+      "serviceType": "Web Development, Mobile App Development, UI/UX Design"
+    }
+  </script>
+
+  <script is:inline>
     document.getElementById("contactButton").addEventListener("click", function () {
       gtag('event', 'contact_button_web_click', {
         'event_category': 'Button Clicks',
@@ -658,7 +396,6 @@
       });
     });
 
-    // Track form submission
     document.querySelector(".contact-form form").addEventListener("submit", function () {
       gtag('event', 'form_submission', {
         'event_category': 'Forms',
@@ -666,7 +403,6 @@
       });
     });
 
-    // Track scroll depth
     window.addEventListener("scroll", function () {
       let scrollDepth = Math.round(window.scrollY / document.body.scrollHeight * 100);
       gtag('event', 'scroll', {
@@ -676,6 +412,5 @@
       });
     });
   </script>
-</body>
 
-</html>
+</BaseLayout>

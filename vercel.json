@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "project-k95.bytcra.com"
+        }
+      ],
+      "destination": "/k95/:path*"
+    }
+  ]
+}

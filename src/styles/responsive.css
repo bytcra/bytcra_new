@@ -126,7 +126,7 @@
         background-position: center;
         background-size: cover;
         gap: 20px;
-        background: url(./images/mobile_bg.png) no-repeat top -40px center / cover;
+        background: url(/images/mobile_bg.png) no-repeat top -40px center / cover;
         background-color: #000;
     }
 
