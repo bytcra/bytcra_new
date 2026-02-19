@@ -1,0 +1,63 @@
+---
+const { title = "K95 — Your Life. One App." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:title" content="K95 — Your Life. One App.">
+  <meta property="og:description"
+    content="K95 is a personal Life OS — journal, health, fitness, and an AI copilot, all in one app.">
+  <meta property="og:url" content="https://project-k95.bytcra.com">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="K95 — Your Life. One App.">
+  <meta name="twitter:description"
+    content="K95 is a personal Life OS — journal, health, fitness, and an AI copilot, all in one app.">
+
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <meta name="robots" content="index, follow">
+
+  <title>{title}</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Google Analytics -->
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-DKJBFPY8PQ"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-DKJBFPY8PQ');
+  </script>
+</head>
+
+<body>
+  <slot />
+
+  <!-- Scroll reveal animations -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function () {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll('.reveal').forEach(function (el) {
+        observer.observe(el);
+      });
+    });
+  </script>
+</body>
+
+</html>

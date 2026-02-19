@@ -1,15 +1,101 @@
 ---
-// Uses the same shared layout (Navbar + Footer included automatically)
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import '../../styles/style.css';
-import '../../styles/responsive.css';
+import K95Layout from '../../layouts/K95Layout.astro';
+import '../../styles/variables.css';
+import '../../styles/k95.css';
 ---
 
-<BaseLayout title="K95 - Coming Soon | Bytcra">
+<K95Layout title="K95 — Your Life. One App.">
 
-  <section class="banner" id="home" style="background: none; background-color: #0B0D11;">
-    <h1>K95</h1>
-    <p>Coming Soon</p>
+  <!-- 1. HERO -->
+  <section class="k95-hero" id="home">
+    <span class="tagline">Now in Beta on TestFlight</span>
+    <h1>Your Life. <span class="blue-text">One App.</span></h1>
+    <p>K95 is a personal Life OS — journal your thoughts, track your health, crush your workouts, and let AI tie it all together.</p>
+    <a href="#" class="k95-cta">Join Beta on TestFlight</a>
+
+    <div class="k95-mockup">
+      <img src="/images/k95-screenshot.png" alt="K95 App — Mood Overview Screen">
+    </div>
   </section>
 
-</BaseLayout>
+
+  <!-- 2. FEATURES -->
+  <div class="k95-section-alt">
+    <section class="k95-section k95-features reveal" id="features">
+      <span class="k95-section-label">Features</span>
+      <h2 class="k95-section-heading">Everything you need. Nothing you don't.</h2>
+      <p class="k95-section-subtext">One app to journal, track, and grow — built for people who want their life in one place.</p>
+
+      <div class="k95-features-grid">
+        <div class="k95-feature-card">
+          <div class="k95-feature-icon">
+            <i class="fas fa-pen-nib"></i>
+          </div>
+          <h3>Journal</h3>
+          <p>Capture your thoughts, ideas, and reflections daily. Your mind deserves a home.</p>
+        </div>
+
+        <div class="k95-feature-card">
+          <div class="k95-feature-icon">
+            <i class="fas fa-heart-pulse"></i>
+          </div>
+          <h3>Health Tracking <span class="k95-badge">Coming Soon</span></h3>
+          <p>Monitor your vitals, sleep, and wellness patterns — all in one dashboard.</p>
+        </div>
+
+        <div class="k95-feature-card">
+          <div class="k95-feature-icon">
+            <i class="fas fa-dumbbell"></i>
+          </div>
+          <h3>Workout Tracker <span class="k95-badge">Coming Soon</span></h3>
+          <p>Log workouts, track progress, and stay consistent with your fitness goals.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- 3. WHY K95 -->
+  <section class="k95-section k95-why reveal" id="why">
+    <span class="k95-section-label">Why K95</span>
+    <h2 class="k95-section-heading">Built different. On purpose.</h2>
+
+    <div class="k95-why-grid">
+      <div class="k95-why-card">
+        <h3>Private by Default</h3>
+        <p>Your data stays yours. No social feeds, no sharing pressure — just you and your life.</p>
+      </div>
+
+      <div class="k95-why-card">
+        <h3>Personal First</h3>
+        <p>Built for one person first — not a team, not a company. This is your operating system.</p>
+      </div>
+
+      <div class="k95-why-card">
+        <h3>Opinionated & Minimal</h3>
+        <p>No bloat, no feature creep. Every screen earns its place. Less is more.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 4. BETA CTA -->
+  <div class="k95-section-alt">
+    <section class="k95-beta reveal" id="beta">
+      <div class="k95-beta-inner">
+        <h2>Be one of the first to use K95.</h2>
+        <p>We're in early beta on TestFlight. Join now and help shape the future of your personal Life OS.</p>
+        <a href="#" class="k95-cta">Join Beta on TestFlight</a>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- 5. FOOTER -->
+  <footer class="k95-footer">
+    <div class="k95-footer-name">K95</div>
+    <div class="k95-footer-tagline">Your Life. One App.</div>
+    <a href="https://bytcra.com">A Bytcra Product</a>
+  </footer>
+
+</K95Layout>

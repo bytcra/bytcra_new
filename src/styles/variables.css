@@ -1,0 +1,20 @@
+/* ===== Bytcra Brand Tokens ===== */
+/* Single source of truth for colors, fonts, and spacing. */
+/* Both style.css and k95.css reference these variables. */
+
+:root {
+    /* Colors */
+    --color-bg: #0B0D11;
+    --color-bg-alt: #10121A;
+    --color-bg-card: #111114;
+    --color-accent: #66FCF1;
+    --color-text: #FFFFFF;
+    --color-text-muted: #FFFFFF99;
+    --color-text-faint: #FFFFFF60;
+    --color-border: #FFFFFF30;
+    --color-border-subtle: #FFFFFF15;
+    --color-dark: #0B0C10;
+
+    /* Font */
+    --font-main: Arial, sans-serif;
+}

@@ -10,13 +10,13 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-main);
     color: white;
-    background-color: #0B0D11;
+    background-color: var(--color-bg);
 }
 
 .nav-link.active {
-    color: #66FCF1;
+    color: var(--color-accent);
     font-weight: bold;
 }
 
@@ -69,7 +69,7 @@ nav {
     padding: 8px 8px 8px 8px;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    border-color: #FFFFFF30;
+    border-color: var(--color-border);
     border-radius: 50px 50px 50px 50px;
     min-width: 652px;
 }
@@ -108,7 +108,7 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a.active,
 .nav-link.active {
-    color: #66FCF1;
+    color: var(--color-accent);
     background-color: #21232C;
 
 }
@@ -118,7 +118,7 @@ nav ul li a.active,
     background-color: #FFFFFF00;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    border-color: #66FCF1;
+    border-color: var(--color-accent);
     border-radius: 50px 50px 50px 50px;
     padding: 16px 32px 16px 32px;
     transition: all 0.3s;
@@ -133,8 +133,8 @@ nav ul li a.active,
 }
 
 .contact-button:hover {
-    background-color: #66FCF1;
-    color: #0B0C10;
+    background-color: var(--color-accent);
+    color: var(--color-dark);
 }
 
 .fas.fa-chevron-down {
@@ -143,7 +143,7 @@ nav ul li a.active,
 }
 
 nav ul li a:hover .fas.fa-chevron-down {
-    color: #66FCF1;
+    color: var(--color-accent);
 }
 
 /* Banner section styles */
@@ -203,9 +203,9 @@ nav ul li a:hover .fas.fa-chevron-down {
     padding: 8px 16px 8px 16px;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    border-color: #FFFFFF30;
+    border-color: var(--color-border);
     border-radius: 50px 50px 50px 50px;
-    color: #66FCF1;
+    color: var(--color-accent);
 }
 
 .banner h1 {
@@ -222,7 +222,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 }
 
 .banner .blue-text {
-    color: #66FCF1
+    color: var(--color-accent);
 }
 
 .banner p {
@@ -236,13 +236,13 @@ nav ul li a:hover .fas.fa-chevron-down {
     height: 54px;
     letter-spacing: 0.2px;
     line-height: 27px;
-    color: #FFFFFF99;
+    color: var(--color-text-muted);
 }
 
 .banner button {
     padding: 15px 30px;
     font-size: 16px;
-    background-color: #66FCF1;
+    background-color: var(--color-accent);
     border: none;
     border-radius: 50px;
     color: white;
@@ -258,13 +258,13 @@ nav ul li a:hover .fas.fa-chevron-down {
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 20px;
-    color: #0B0C10;
+    color: var(--color-dark);
     text-transform: uppercase;
 }
 
 .banner button:hover {
     background-color: #FFFFFF;
-    color: #0B0C10;
+    color: var(--color-dark);
 }
 
 /* About section */
@@ -285,12 +285,12 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 .about-header span {
     font-size: 14px;
-    color: #66FCF1;
+    color: var(--color-accent);
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 10px;
     padding: 8px 16px;
-    border: 1px solid #FFFFFF30;
+    border: 1px solid var(--color-border);
     border-radius: 50px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -427,7 +427,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 }
 
 .about-philosophy {
-    background-color: #0B0D11;
+    background-color: var(--color-bg);
     color: white;
     flex: 1;
     z-index: 10;
@@ -446,7 +446,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 .about-philosophy p {
     font-size: 16px;
     line-height: 24px;
-    color: #FFFFFF99;
+    color: var(--color-text-muted);
     letter-spacing: 0.3px;
 }
 
@@ -492,12 +492,12 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 .services-header span {
     font-size: 14px;
-    color: #66FCF1;
+    color: var(--color-accent);
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 10px;
     padding: 8px 16px;
-    border: 1px solid #FFFFFF30;
+    border: 1px solid var(--color-border);
     border-radius: 50px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -519,11 +519,11 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 .service-card {
     text-align: center;
-    background-color: #0B0C10;
+    background-color: var(--color-dark);
     padding: 60px 24px 20px 24px;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    border-color: #FFFFFF30;
+    border-color: var(--color-border);
     border-radius: 10px 10px 10px 10px;
     transition: all 0.3s ease;
     position: relative;
@@ -542,20 +542,20 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 
 /* .service-card:hover {
-    border-color: #66FCF1;
+    border-color: var(--color-accent);
     transform: translateY(-5px);
 } */
 
 .service-card .icon {
     font-size: 48px;
-    color: #66FCF1;
+    color: var(--color-accent);
     margin-bottom: 20px;
     position: relative;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .service-card .icon svg {
-    color: #66FCF1;
+    color: var(--color-accent);
     /* Your desired color */
 }
 
@@ -607,7 +607,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 .service-card p {
     font-size: 16px;
-    color: #FFFFFF99;
+    color: var(--color-text-muted);
     line-height: 24px;
     letter-spacing: 0.3px;
     margin: 0px 0px 20px 0px;
@@ -616,7 +616,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 .service-card .icon-box-link {
     font-size: 14px;
     font-weight: 600;
-    color: #66FCF1;
+    color: var(--color-accent);
     text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-flex;
@@ -643,7 +643,7 @@ nav ul li a:hover .fas.fa-chevron-down {
     display: block;
     font-size: 12px;
     font-weight: 600;
-    color: #66FCF1;
+    color: var(--color-accent);
     text-transform: uppercase;
     letter-spacing: 1px;
     opacity: 0;
@@ -686,7 +686,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 /* Why Us Section */
 .why-us-section {
     padding: 120px 90px;
-    background-color: #0B0D11;
+    background-color: var(--color-bg);
     color: white;
 }
 
@@ -703,12 +703,12 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 .why-us-text span {
     font-size: 14px;
-    color: #66FCF1;
+    color: var(--color-accent);
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 10px;
     padding: 8px 16px;
-    border: 1px solid #FFFFFF30;
+    border: 1px solid var(--color-border);
     border-radius: 50px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -740,7 +740,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 .why-us-item i {
     font-size: 32px;
-    color: #66FCF1;
+    color: var(--color-accent);
 }
 
 .why-us-item h3 {
@@ -753,7 +753,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 .why-us-item p {
     font-size: 16px;
-    color: #FFFFFF99;
+    color: var(--color-text-muted);
     line-height: 24px;
     letter-spacing: 0.3px;
 }
@@ -772,7 +772,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 .why-us-image .image-caption {
     font-size: 12px;
-    color: #FFFFFF99;
+    color: var(--color-text-muted);
     margin-top: 5px;
     text-align: right;
 }
@@ -780,7 +780,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 /* Latest Blog Section */
 .latest-blog-section {
     padding: 120px 90px;
-    background-color: #0B0D11;
+    background-color: var(--color-bg);
     color: white;
 }
 
@@ -791,12 +791,12 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 .blog-header span {
     font-size: 12px;
-    color: #66FCF1;
+    color: var(--color-accent);
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 10px;
     padding: 8px 16px;
-    border: 1px solid #FFFFFF30;
+    border: 1px solid var(--color-border);
     border-radius: 50px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -822,7 +822,7 @@ nav ul li a:hover .fas.fa-chevron-down {
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 480px;
-    border: 1px solid #FFFFFF30;
+    border: 1px solid var(--color-border);
 }
 
 .blog-card::before {
@@ -864,7 +864,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 }
 
 .blog-content h3:hover {
-    color: #66FCF1;
+    color: var(--color-accent);
 }
 
 .blog-content p {
@@ -927,7 +927,7 @@ nav ul li a:hover .fas.fa-chevron-down {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.3px;
-    color: #FFFFFF99;
+    color: var(--color-text-muted);
     margin-bottom: 40px;
     max-width: 600px;
     margin-left: auto;
@@ -939,8 +939,8 @@ nav ul li a:hover .fas.fa-chevron-down {
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 600;
-    color: #0B0C10;
-    background-color: #66FCF1;
+    color: var(--color-dark);
+    background-color: var(--color-accent);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -950,7 +950,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 .cta-button:hover {
     background-color: #FFFFFF;
-    color: #0B0C10;
+    color: var(--color-dark);
 }
 
 /* Footer Section */
@@ -958,7 +958,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 /* Contact Section */
 .contact-section {
     padding: 120px 90px;
-    background-color: #0B0D11;
+    background-color: var(--color-bg);
     color: white;
     display: flex;
     justify-content: center;
@@ -1010,7 +1010,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 }
 
 .contact-content .highlight {
-    color: #66FCF1;
+    color: var(--color-accent);
     font-size: 70px;
     font-weight: 700;
     margin-left: 20px;
@@ -1077,9 +1077,9 @@ nav ul li a:hover .fas.fa-chevron-down {
 .contact-form textarea {
     padding: 15px;
     font-size: 16px;
-    border: 1px solid #66FCF1;
+    border: 1px solid var(--color-accent);
     border-radius: 10px;
-    background-color: #0B0D11;
+    background-color: var(--color-bg);
     color: white;
     outline: none;
     transition: border-color 0.3s;
@@ -1087,7 +1087,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: #FFFFFF99;
+    color: var(--color-text-muted);
 }
 
 .contact-form input:focus,
@@ -1100,7 +1100,7 @@ nav ul li a:hover .fas.fa-chevron-down {
     font-size: 16px;
     font-weight: 600;
     color: black;
-    background-color: #66FCF1;
+    background-color: var(--color-accent);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -1176,12 +1176,12 @@ nav ul li a:hover .fas.fa-chevron-down {
 }
 
 .footer-column ul li a:hover {
-    color: #66FCF1;
+    color: var(--color-accent);
 
 }
 
 .footer-column ul li i {
-    color: #66FCF1;
+    color: var(--color-accent);
     font-size: 20px;
     max-width: 20px;
     min-width: 20px;
@@ -1190,7 +1190,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 /* Footer Bottom */
 .footer-bottom {
     text-align: center;
-    border-top: 1px solid #FFFFFF30;
+    border-top: 1px solid var(--color-border);
     padding-top: 30px;
     display: flex;
     align-items: center;
@@ -1219,12 +1219,12 @@ nav ul li a:hover .fas.fa-chevron-down {
 }
 
 .footer-links ul li a:hover {
-    color: #66FCF1;
+    color: var(--color-accent);
 }
 
 .footer-description {
     font-size: 12px;
-    color: #FFFFFF99;
+    color: var(--color-text-muted);
     margin-bottom: 20px;
 }
 
@@ -1242,7 +1242,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 }
 
 .social-icons a:hover {
-    color: #66FCF1;
+    color: var(--color-accent);
 }
 
 .footer-links {
@@ -1268,12 +1268,12 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 .portfolio-tag {
     font-size: 14px;
-    color: #66FCF1;
+    color: var(--color-accent);
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 10px;
     padding: 8px 16px;
-    border: 1px solid #FFFFFF30;
+    border: 1px solid var(--color-border);
     border-radius: 50px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -1289,7 +1289,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 .all-projects-button {
     padding: 15px 30px;
     font-size: 16px;
-    background-color: #66FCF1;
+    background-color: var(--color-accent);
     border: none;
     border-radius: 50px;
     color: black;
@@ -1300,7 +1300,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 .all-projects-button:hover {
     background-color: #FFFFFF;
-    color: #0B0C10;
+    color: var(--color-dark);
 }
 
 /* Portfolio Grid */
@@ -1311,12 +1311,12 @@ nav ul li a:hover .fas.fa-chevron-down {
 }
 
 .portfolio-item {
-    background-color: #0B0C10;
+    background-color: var(--color-dark);
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* border: 1px solid #FFFFFF30; */
+    /* border: 1px solid var(--color-border); */
     padding: 20px;
     /* box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, .7); */
 }
@@ -1374,7 +1374,7 @@ nav ul li a:hover .fas.fa-chevron-down {
 }
 
 .portfolio-info .highlight {
-    color: #66FCF1;
+    color: var(--color-accent);
 }
 
 /* Tags */
@@ -1386,8 +1386,8 @@ nav ul li a:hover .fas.fa-chevron-down {
 
 .tag {
     background: transparent;
-    border: 1px solid #66FCF1;
-    color: #66FCF1;
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
     padding: 6px 12px;
     font-size: 8px;
     text-transform: uppercase;
